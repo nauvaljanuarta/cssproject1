@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body class="flex min-h-screen flex-col bg-white">
+    <header class="sticky top-0 z-40 bg-white shadow-black">
+        <div class="container mx-auto flex h-17 items-center justify-between py-4 px-4">
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="#features"
+                    class="font-bold rounded-lg px-3 py-2 text-gray-700 transition duration-500 ease-in-out hover:bg-gray-100 hover:text-gray-900">
+                    Fitur
+                </a>
+                <a href="#testimonials"
+                    class="font-bold rounded-lg px-3 py-2 text-gray-700 transition duration-500 ease-in-out hover:bg-gray-100 hover:text-gray-900">
+                    Testimoni
+                </a>
+                <a href="#pricing"
+                    class="font-bold rounded-lg px-3 py-2 text-gray-700 transition duration-500 ease-in-out hover:bg-gray-100 hover:text-gray-900">
+                    Harga
+                </a>
+                <a href="#contact"
+                    class="font-bold rounded-lg px-3 py-2 text-gray-700 transition duration-500 ease-in-out hover:bg-gray-100 hover:text-gray-900">
+                    Kontak
+                </a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <span class="text-5xl font-bold">ClothIn. </span>
+            </div>
+            <div class="flex items-center gap-4">
+                <button
+                    class="hidden md:inline-flex items-center justify-center rounded-md text-sm font-medium border border-gray-300 bg-white hover:bg-gray-200 h-10 px-4 py-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                    Masuk
+                </button>
+                <button
+                    class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                    Daftar Sekarang
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-1">
+        <!-- hero section  -->
+        <section class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4">
+                <div class="grid gap-12 lg:grid-cols-[2fr_4fr] items-center">
+                    <!-- Bagian Teks -->
+                    <div class="flex flex-col justify-center space-y-4">
+                        <div class="space-y-2">
+                            <h1 class="text-6xl font-bold leading-tight">
+                                Solusi Terbaik untuk Bisnis Anda
+                            </h1>
+                            <p class="text-gray-700 text-lg">
+                                Tingkatkan produktivitas dan efisiensi bisnis Anda dengan platform kami yang inovatif.
+                            </p>
+                        </div>
+                        <div class="flex flex-col gap-2 sm:flex-row">
+                            <button
+                                class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-12 px-6 transition">
+                                Mulai Sekarang
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-6 w-6">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </button>
+                            <button
+                                class="inline-flex items-center justify-center rounded-md text-sm font-medium border border-gray-300 bg-white hover:bg-gray-200 h-12 px-6 transition">
+                                Pelajari Lebih Lanjut
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Bagian Gambar -->
+                    <div class="w-full max-w-3xl mx-auto">
+                        <img src="../images/hero2.svg" alt="Hero Image"
+                          class="w-full h-auto drop-shadow-x"  />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- feature section  -->
+        <section id="features" class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <div class="inline-block rounded-md bg-blue-600 px-4 py-2 text-sm text-white">
+                            Fitur Unggulan
+                        </div>
+                        <h2 class="text-2xl font-bold">Kenapa Memilih Kami?</h2>
+                        <p class="text-gray-700">
+                            Platform kami menawarkan berbagai fitur yang akan membantu bisnis Anda berkembang.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+                    <div class="flex flex-col items-center space-y-2 rounded-md border p-6 shadow bg-white">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-md bg-blue-600 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-6 w-6">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Mudah Digunakan</h3>
+                        <p class="text-center text-gray-700">Antarmuka yang intuitif dan mudah dipahami oleh semua
+                            pengguna.</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-md border p-6 shadow bg-white">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-md bg-blue-600 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-6 w-6">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Analisis Real-time</h3>
+                        <p class="text-center text-gray-700">Dapatkan wawasan bisnis dengan analisis data secara
+                            real-time.</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 rounded-md border p-6 shadow bg-white">
+                        <div class="flex h-10 w-10 items-center justify-center rounded-md bg-blue-600 text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="h-6 w-6">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold">Dukungan 24/7</h3>
+                        <p class="text-center text-gray-700">Tim dukungan kami siap membantu Anda kapan saja.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col items-center justify-center space-y-4 text-center">
+                    <div class="space-y-2">
+                        <h2 class="text-2xl font-bold">Apa Kata Pelanggan Kami</h2>
+                        <p class="text-gray-700">
+                            Dengarkan pengalaman dari pelanggan yang telah menggunakan layanan kami.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-3">
+                    <div class="flex flex-col items-center space-y-4 rounded-md border p-6 shadow">
+                        <div class="h-16 w-16 rounded-md bg-gray-100"></div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold">Budi Santoso</h3>
+                            <p class="text-sm text-gray-700">CEO, PT Maju Jaya</p>
+                        </div>
+                        <p class="text-center text-gray-700">"Platform ini telah membantu bisnis kami meningkatkan
+                            efisiensi sebesar 40% dalam 3 bulan pertama."</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4 rounded-md border p-6 shadow">
+                        <div class="h-16 w-16 rounded-md bg-gray-100"></div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold">Siti Rahayu</h3>
+                            <p class="text-sm text-gray-700">Marketing Manager, CV Sukses Mandiri</p>
+                        </div>
+                        <p class="text-center text-gray-700">"Antarmuka yang intuitif dan dukungan pelanggan yang luar
+                            biasa. Sangat direkomendasikan!"</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-4 rounded-md border p-6 shadow">
+                        <div class="h-16 w-16 rounded-md bg-gray-100"></div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-bold">Agus Wijaya</h3>
+                            <p class="text-sm text-gray-700">CTO, Startup Indonesia</p>
+                        </div>
+                        <p class="text-center text-gray-700">"Fitur analisis real-time sangat membantu kami dalam
+                            mengambil keputusan bisnis yang tepat."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+            <div class="container mx-auto grid items-center justify-center gap-4 px-4 text-center">
+                <div class="space-y-3">
+                    <h2 class="text-2xl font-bold">Hubungi Kami</h2>
+                    <p class="mx-auto max-w-[600px] text-gray-700">
+                        Punya pertanyaan? Tim kami siap membantu Anda.
+                    </p>
+                </div>
+                <div class="mx-auto w-full max-w-sm space-y-2">
+                    <form class="grid gap-4">
+                        <div class="grid gap-2">
+                            <label for="name" class="text-sm font-medium text-left">
+                                Nama
+                            </label>
+                            <input id="name"
+                                class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                                placeholder="Masukkan nama Anda" />
+                        </div>
+                        <div class="grid gap-2">
+                            <label for="email" class="text-sm font-medium text-left">
+                                Email
+                            </label>
+                            <input id="email" type="email"
+                                class="flex h-10 w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                                placeholder="Masukkan email Anda" />
+                        </div>
+                        <div class="grid gap-2">
+                            <label for="message" class="text-sm font-medium text-left">
+                                Pesan
+                            </label>
+                            <textarea id="message"
+                                class="flex min-h-[100px] w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
+                                placeholder="Tulis pesan Anda"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="inline-flex items-center justify-center rounded-md text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t bg-gray-100">
+        <div
+            class="container mx-auto flex flex-col gap-6 py-8 px-4 md:flex-row md:items-center md:justify-between md:py-12">
+            <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2">
+                    <span class="text-xl font-bold">Brand</span>
+                </div>
+                <p class="text-sm text-gray-700">
+                    &copy;
+                    <script>
+                        document.write(new Date().getFullYear())
+                    </script> Brand Inc. Hak Cipta Dilindungi.
+                </p>
+            </div>
+            <nav class="grid grid-cols-2 gap-8 sm:grid-cols-4">
+                <div class="space-y-3">
+                    <h3 class="text-sm font-medium">Produk</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Fitur
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Harga
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Demo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-sm font-medium">Perusahaan</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Tentang Kami
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Karir
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-sm font-medium">Sumber Daya</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Dokumentasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Panduan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-sm font-medium">Kontak</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Telepon
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm hover:text-blue-500">
+                                Alamat
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+<style>
+    body {
+        font-family: 'MontSerrat', sans-serif;
+    }
+</style>
+
+</html>
