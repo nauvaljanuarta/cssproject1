@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClothIn?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <style>
@@ -73,34 +75,28 @@
 <body>
     <header id="navbar" class="sticky top-0 z-40 bg-white shadow-black">
         <div class="container mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-
-            <!-- Kiri: Desktop Nav -->
             <nav class="hidden lg:flex items-center gap-6">
                 <a href="#testimonials"
-                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Testimoni</a>
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Testimonials</a>
                 <a href="#features"
-                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Fitur</a>
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Features</a>
                 <a href="#blog"
                     class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Blog</a>
                 <a href="#contact"
-                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Kontak</a>
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Contact</a>
             </nav>
 
-            <!-- Tengah: Logo -->
             <div class="text-center">
                 <a href="#hero" class="nav-link"><span
                         class="text-2xl sm:text-4xl font-bold me-70">ClothIn.</span></a>
             </div>
 
-            <!-- Kanan: Button Desktop / Hamburger Mobile -->
             <div class="flex items-center justify-end gap-4">
-                <!-- Desktop Button -->
                 <button
                     class="hidden lg:inline-block text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">
                     Get Started
                 </button>
 
-                <!-- Mobile Menu Button -->
                 <button id="mobile-menu-button"
                     class="lg:hidden p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-2">
                     <span class="sr-only">Open main menu</span>
@@ -117,13 +113,12 @@
             </div>
         </div>
 
-        <!-- Mobile Nav -->
         <div class="ml-auto">
             <div id="mobile-menu" class="hidden lg:hidden px-4 bg-white shadow-lg">
-                <a href="#features"
-                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Features</a>
                 <a href="#testimonials"
                     class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Testimonials</a>
+                <a href="#features"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Features</a>
                 <a href="#blog"
                     class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Blog</a>
                 <a href="#contact"
@@ -135,8 +130,6 @@
             </div>
         </div>
     </header>
-
-
 
     <main class="flex-1">
         <section id="hero" class="relative py-20 md:py-32 overflow-visible">
@@ -158,7 +151,7 @@
                             </button>
                         </div>
                     </div>
-                    <!-- bagian kanan -->
+
                     <div class="relative">
                         <div id="hero-image"
                             class="relative w-full max-w-xl mx-auto z-15 overflow-hidden opacity-0 translate-y-10
@@ -166,16 +159,9 @@
                             <img src="../images/hero2.svg" alt="Platform dashboard"
                                 class="w-full h-auto rounded-3xl max-w-4xl drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)]" />
                         </div>
-                        <!-- <div
-                            class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] overflow-x-clip mix-blend-overlay">
-                        </div>
-                        <div
-                            class="absolute -top-6 -right-6 w-32 h-32 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] [animation-delay:1s] overflow-x-clip mix-blend-overlay">
-                        </div> -->
                     </div>
                 </div>
             </div>
-
 
             <div class="absolute inset-0 pointer-events-none z-0 mix-blend-overlay blur-sm">
                 <div
@@ -199,192 +185,175 @@
             </div>
         </section>
 
-
         <section id="testimonials" class="relative py-20 bg-blue-500/3 pt-20 z-15 rounded-lg">
-            <div class="relative z-20 container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Don't just take our word for it. Here's what our customers have to say about their experience.
-                    </p>
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-6">
-                    <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
-                        <div class="group [perspective:1000px] h-72 w-full">
-                            <div
-                                class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                                <div
-                                    class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
-                                    <div class="flex flex-col items-center flex-grow">
-                                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
-                                            <img src="https://placehold.co/100x100" alt="Alex Johnson"
-                                                class="w-full h-full object-cover" />
-                                        </div>
-                                        <p class="text-gray-700">"This platform has completely transformed how we
-                                            approach our marketing campaigns."</p>
-                                    </div>
-                                    <div class="mt-4">
-                                        <p class="font-semibold text-blue-500">Alex Johnson</p>
-                                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                                    <p>
-                                        More about Alex Johnson and his experience at TechCorp. He has led numerous
-                                        award-winning campaigns and is passionate about digital innovation.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
-                        <div class="group [perspective:1000px] h-72 w-full">
-                            <div
-                                class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-
-                                <div
-                                    class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
-                                    <div class="flex flex-col items-center flex-grow">
-                                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
-                                            <img src="https://placehold.co/100x100" alt="Alex Johnson"
-                                                class="w-full h-full object-cover" />
-                                        </div>
-                                        <p class="text-gray-700">"This platform has completely transformed how we
-                                            approach our marketing campaigns."</p>
-                                    </div>
-                                    <div class="mt-4">
-                                        <p class="font-semibold text-blue-500">Alex Johnson</p>
-                                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                                    <p>
-                                        More about Alex Johnson and his experience at TechCorp. He has led numerous
-                                        award-winning campaigns and is passionate about digital innovation.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
-                        <div class="group [perspective:1000px] h-72 w-full">
-                            <div
-                                class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                                <div
-                                    class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
-                                    <div class="flex flex-col items-center flex-grow">
-                                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
-                                            <img src="https://placehold.co/100x100" alt="Alex Johnson"
-                                                class="w-full h-full object-cover" />
-                                        </div>
-                                        <p class="text-gray-700">"This platform has completely transformed how we
-                                            approach our marketing campaigns."</p>
-                                    </div>
-                                    <div class="mt-4">
-                                        <p class="font-semibold text-blue-500">Alex Johnson</p>
-                                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
-                                    </div>
-                                </div>
-                                <div
-                                    class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                                    <p>
-                                        More about Alex Johnson and his experience at TechCorp. He has led numerous
-                                        award-winning campaigns and is passionate about digital innovation.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <div class="relative z-20 container mx-auto px-4 sm:px-6">
+              <div class="text-center mb-16">
+                  <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                  <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                      Hear from our happy shoppers and sellers about their sustainable fashion journey with Clothin.
+                  </p>
+              </div>
+      
+              <div class="flex flex-wrap justify-center gap-6">
+                  <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
+                      <div class="group [perspective:1000px] h-72 w-full">
+                          <div class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                              <div class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
+                                  <div class="flex flex-col items-center flex-grow">
+                                      <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
+                                          <img src="../images/testi1.jpg" alt="Nadhiva"
+                                              class="w-full h-full object-cover" />
+                                      </div>
+                                      <p class="text-gray-700">"Clothin made it so easy to refresh my wardrobe with sustainable and stylish pieces. I love the variety of secondhand clothes available!"</p>
+                                  </div>
+                                  <div class="mt-4">
+                                      <p class="font-semibold text-blue-500">Nadhiva Maulidya</p>
+                                      <p class="text-sm text-gray-500">Sustainable Shopper</p>
+                                  </div>
+                              </div>
+                              <div class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                  <p>
+                                      Nadhiva has been an avid supporter of sustainable fashion for years and loves how Clothin enables her to make eco-friendly choices without compromising on style.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
+                      <div class="group [perspective:1000px] h-72 w-full">
+                          <div class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                              <div class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
+                                  <div class="flex flex-col items-center flex-grow">
+                                      <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
+                                          <img src="../images/testi2.jpg" alt="reynaldi"
+                                              class="w-full h-full object-cover" />
+                                      </div>
+                                      <p class="text-gray-700">"I sold some of my old clothes on Clothin, and the process was simple and seamless. It feels great to pass them on to someone who will give them a second life!"</p>
+                                  </div>
+                                  <div class="mt-4">
+                                      <p class="font-semibold text-blue-500">Reynaldi Susilo</p>
+                                      <p class="text-sm text-gray-500">Clothin Seller</p>
+                                  </div>
+                              </div>
+                              <div class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                  <p>
+                                      Rey enjoys decluttering his home while contributing to a more sustainable world. His experience with Clothin has been both rewarding and easy.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
+                      <div class="group [perspective:1000px] h-72 w-full">
+                          <div class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                              <div class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
+                                  <div class="flex flex-col items-center flex-grow">
+                                      <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
+                                          <img src="../images/testi3.jpg" alt="labada"
+                                              class="w-full h-full object-cover" />
+                                      </div>
+                                      <p class="text-gray-700">"Clothin's customer support was fantastic when I had questions about selling my items. I will definitely be coming back to shop and sell more!"</p>
+                                  </div>
+                                  <div class="mt-4">
+                                      <p class="font-semibold text-blue-500">Labada labidi</p>
+                                      <p class="text-sm text-gray-500">Happy Customer</p>
+                                  </div>
+                              </div>
+                              <div class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                  <p>
+                                      Labada discovered Clothin as a way to sell her pre-loved clothes while finding sustainable fashion gems. She's thrilled with the eco-friendly impact!
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
 
         <section id="features" class="py-20 hidden-section relative z-10">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-
                     <div class="md:sticky md:top-24">
-                        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Powerful Features</h2>
+                        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Why Shop with Clothin?</h2>
                         <p class="text-lg sm:text-xl text-gray-600 mb-4">
-                            Our platform is packed with features designed to help your business thrive in the digital
-                            age.
+                            Discover why thousands trust Clothin for their daily fashion needs.
                         </p>
                         <p class="text-base sm:text-lg text-gray-500">
-                            Explore tools that improve speed, security, integration, and give you the insight to grow
-                            efficiently.
+                            From curated collections to seamless shopping experiences — we've got your style covered.
                         </p>
                     </div>
-
                     <div class="grid grid-cols-2 gap-8 relative z-10">
-                        <!-- Card 1 -->
                         <div
                             class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
                             <div>
-                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
-                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
-                                    ensuring you never have to wait for results.</p>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Trendy Collections</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Stay ahead with our handpicked seasonal styles updated every week.
+                                </p>
                             </div>
                             <div class="mt-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-pink-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Fast & Free Shipping</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Get your favorite outfits delivered quickly — always free on orders over $50.
+                                </p>
+                            </div>
+                            <div class="mt-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 10h11l4-4m0 0l4 4m-4-4v12" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Easy Returns</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Not satisfied? No worries. Return items within 30 days hassle-free.
+                                </p>
+                            </div>
+                            <div class="mt-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-400" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 4v5h.582M20 20v-5h-.582M4 9a9 9 0 0116 0M20 15a9 9 0 01-16 0" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Secure Payments</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">
+                                    Shop confidently with multiple payment options and top-tier security.
+                                </p>
+                            </div>
+                            <div class="mt-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-500"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 11c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zm6-2V7a2 2 0 00-2-2H8a2 2 0 00-2 2v2M5 11h14v8H5z" />
                                 </svg>
                             </div>
                         </div>
 
-                        <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
-                            <div>
-                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
-                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
-                                    ensuring you never have to wait for results.</p>
-                            </div>
-                            <div class="mt-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
-                            <div>
-                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
-                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
-                                    ensuring you never have to wait for results.</p>
-                            </div>
-                            <div class="mt-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
-                            <div>
-                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
-                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
-                                    ensuring you never have to wait for results.</p>
-                            </div>
-                            <div class="mt-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                    viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
-                                </svg>
-                            </div>
-                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -394,14 +363,15 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                     <div class="flex justify-center">
-                        <img src="../images/hero3.svg" alt="Workflow Illustration" class="rounded-xl  max-w-full" />
+                        <img src="../images/hero3.svg" alt="Workflow Illustration"
+                            class="rounded-xl w-full max-w-5xl md:max-w-6xl xl:max-w-7xl" />
                     </div>
 
                     <div>
-                        <h2 class="text-3xl font-bold mb-6">Streamline Your Workflow</h2>
+                        <h2 class="text-3xl font-bold mb-6">Make Fashion Sustainable & Simple</h2>
                         <p class="text-lg text-gray-600 mb-8">
-                            Our platform helps you automate repetitive tasks, collaborate seamlessly with your team, and
-                            focus on what matters most.
+                            Clothin helps you buy and sell quality pre-loved clothing effortlessly, making fashion more
+                            affordable and eco-friendly.
                         </p>
 
                         <ul class="space-y-4 mb-8">
@@ -412,7 +382,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span>Automate routine processes and save hours each week</span>
+                                <span>List your pre-loved clothes in just minutes</span>
                             </li>
                             <li class="flex items-start">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -421,7 +391,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span>Real-time collaboration tools for distributed teams</span>
+                                <span>Discover unique secondhand fashion from trusted sellers</span>
                             </li>
                             <li class="flex items-start">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -430,7 +400,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span>Customizable workflows that adapt to your business needs</span>
+                                <span>Support a circular economy by giving clothes a second life</span>
                             </li>
                             <li class="flex items-start">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -439,7 +409,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M5 13l4 4L19 7" />
                                 </svg>
-                                <span>Comprehensive reporting to track progress and results</span>
+                                <span>Track your sales and orders easily from your dashboard</span>
                             </li>
                         </ul>
 
@@ -487,13 +457,12 @@
                                     d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                             </svg>
                             <blockquote class="text-xl italic font-medium text-gray-800 mb-4">
-                                "Implementing this platform was one of the best business decisions we've made. The ROI
-                                was evident
-                                within the first quarter, and our team's productivity has never been higher."
+                                "Clothin made it so easy to declutter my closet and find new styles at amazing prices.
+                                It's my go-to for fashion now!"
                             </blockquote>
                             <div>
-                                <p class="font-semibold">Jennifer Lee</p>
-                                <p class="text-sm text-gray-600">COO, Enterprise Solutions</p>
+                                <p class="font-semibold">Ivan Gunawan</p>
+                                <p class="text-sm text-gray-600">Fashion Enthusiast & Seller</p>
                             </div>
                         </div>
                         <div class="absolute -top-6 -left-6 w-24 h-24 bg-blue-500/10 rounded-full z-0 animate-bounce-slow"
@@ -501,32 +470,31 @@
                     </div>
 
                     <div>
-                        <h2 class="text-3xl font-bold mb-6">Proven Results</h2>
+                        <h2 class="text-3xl font-bold mb-6">Real Impact for Fashion Lovers</h2>
                         <p class="text-lg text-gray-600 mb-8">
-                            Our customers consistently report significant improvements in efficiency, cost savings, and
-                            team
-                            satisfaction after implementing our solution.
+                            Thousands of users are buying and selling pre-loved clothing on Clothin every day — saving
+                            money, reducing waste, and making a difference.
                         </p>
 
                         <div class="grid grid-cols-2 gap-6 mb-8">
                             <div class="bg-white p-4 rounded-lg shadow-sm">
                                 <p class="text-3xl font-bold text-blue-500 mb-1"><span class="counter"
-                                        data-target="40">0</span>%</p>
-                                <p class="text-sm text-gray-600">Increase in productivity</p>
+                                        data-target="65">0</span>%</p>
+                                <p class="text-sm text-gray-600">Savings on average purchases</p>
                             </div>
                             <div class="bg-white p-4 rounded-lg shadow-sm">
                                 <p class="text-3xl font-bold text-blue-500 mb-1"><span class="counter"
-                                        data-target="25">0</span>%</p>
-                                <p class="text-sm text-gray-600">Reduction in costs</p>
+                                        data-target="80">0</span>%</p>
+                                <p class="text-sm text-gray-600">Of users sold their first item in under a week</p>
                             </div>
                             <div class="bg-white p-4 rounded-lg shadow-sm">
                                 <p class="text-3xl font-bold text-blue-500 mb-1"><span class="counter"
-                                        data-target="3.5">0</span>x</p>
-                                <p class="text-sm text-gray-600">Return on investment</p>
+                                        data-target="1500">0</span>+</p>
+                                <p class="text-sm text-gray-600">Items reused every month</p>
                             </div>
                             <div class="bg-white p-4 rounded-lg shadow-sm">
                                 <p class="text-3xl font-bold text-blue-500 mb-1"><span class="counter"
-                                        data-target="92">0</span>%</p>
+                                        data-target="98">0</span>%</p>
                                 <p class="text-sm text-gray-600">Customer satisfaction</p>
                             </div>
                         </div>
@@ -539,26 +507,26 @@
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-500/40 mb-6"
-                        fill="none" viewBox="0 0 24 24" stroke="  class="h-12 w-12 mx-auto text-blue-500/40 mb-6"
                         fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                     </svg>
 
                     <blockquote class="text-2xl md:text-3xl font-medium text-gray-800 mb-8">
-                        "This platform has revolutionized how we operate. The intuitive interface, powerful features,
-                        and
-                        exceptional support team have made this an invaluable asset to our business."
+                        "Clothin made it incredibly easy to turn my closet into cash. I can sell my clothes with just a
+                        few
+                        clicks,
+                        and buyers love the quality and prices."
                     </blockquote>
 
                     <div class="flex items-center justify-center">
                         <div class="h-16 w-16 mr-4 rounded-full overflow-hidden">
-                            <img src="https://placehold.co/100x100" alt="David Rodriguez"
+                            <img src="../images/testi3.jpg" alt="janu"
                                 class="w-full h-full object-cover" />
                         </div>
                         <div class="text-left">
-                            <p class="font-semibold text-lg">David Rodriguez</p>
-                            <p class="text-gray-600">CTO, Global Innovations</p>
+                            <p class="font-semibold text-lg">Hartono Budikusuma</p>
+                            <p class="text-gray-600">Verified Seller on Clothin</p>
                         </div>
                     </div>
                 </div>
@@ -568,27 +536,28 @@
         <section id="blog" class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold mb-4">Latest Insights</h2>
+                    <h2 class="text-3xl font-bold mb-4">Fashion Stories & Tips</h2>
                     <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Stay updated with our latest articles, tips, and industry insights.
+                        Discover the latest trends in sustainable fashion, secondhand style guides, and stories from our
+                        community.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div
                         class="overflow-hidden border-0 shadow-md rounded-lg bg-white transform transition-transform hover:scale-105">
                         <div class="aspect-square">
-                            <img src="https://placehold.co/400x400" alt="10 Ways to Boost Team Productivity"
+                            <img src="../images/blog1.jpg" alt="Wardrobe Refresh"
                                 class="w-full h-full object-cover" />
                         </div>
                         <div class="p-6">
                             <div class="flex items-center text-sm text-gray-500 mb-3">
                                 <span>Apr 10, 2025</span>
                                 <span class="mx-2">•</span>
-                                <span>5 min read</span>
+                                <span>4 min read</span>
                             </div>
-                            <h3 class="text-xl font-semibold mb-2">10 Ways to Boost Team Productivity</h3>
-                            <p class="text-gray-600 mb-4">Discover proven strategies to enhance your team's efficiency
-                                and output without burning out.</p>
+                            <h3 class="text-xl font-semibold mb-2">5 Easy Ways to Refresh Your Closet Sustainably</h3>
+                            <p class="text-gray-600 mb-4">Give your wardrobe new life without buying new. Here’s how to
+                                upcycle, swap, and sell fashionably.</p>
                             <a href="#" class="text-blue-500 font-medium flex items-center hover:underline">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none"
@@ -603,18 +572,18 @@
                     <div
                         class="overflow-hidden border-0 shadow-md rounded-lg bg-white transform transition-transform hover:scale-105">
                         <div class="aspect-square">
-                            <img src="https://placehold.co/400x400" alt="The Future of Remote Work"
+                            <img src="../images/blog2.jpg" alt="Thrift Guide"
                                 class="w-full h-full object-cover" />
                         </div>
                         <div class="p-6">
                             <div class="flex items-center text-sm text-gray-500 mb-3">
                                 <span>Apr 5, 2025</span>
                                 <span class="mx-2">•</span>
-                                <span>7 min read</span>
+                                <span>6 min read</span>
                             </div>
-                            <h3 class="text-xl font-semibold mb-2">The Future of Remote Work</h3>
-                            <p class="text-gray-600 mb-4">How technology is reshaping the workplace and what it means
-                                for your business in the coming years.</p>
+                            <h3 class="text-xl font-semibold mb-2">The Ultimate Guide to Thrifting Like a Pro</h3>
+                            <p class="text-gray-600 mb-4">Master the art of secondhand shopping with tips on finding
+                                gems, knowing value, and shopping sustainably.</p>
                             <a href="#" class="text-blue-500 font-medium flex items-center hover:underline">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none"
@@ -625,21 +594,22 @@
                             </a>
                         </div>
                     </div>
+
                     <div
                         class="overflow-hidden border-0 shadow-md rounded-lg bg-white transform transition-transform hover:scale-105">
                         <div class="aspect-square">
-                            <img src="https://placehold.co/400x400" alt="Implementing Effective Digital Strategies"
+                            <img src="../images/blog3.jpg" alt="Eco Fashion Tips"
                                 class="w-full h-full object-cover" />
                         </div>
                         <div class="p-6">
                             <div class="flex items-center text-sm text-gray-500 mb-3">
                                 <span>Mar 28, 2025</span>
                                 <span class="mx-2">•</span>
-                                <span>6 min read</span>
+                                <span>5 min read</span>
                             </div>
-                            <h3 class="text-xl font-semibold mb-2">Implementing Effective Digital Strategies</h3>
-                            <p class="text-gray-600 mb-4">A step-by-step guide to creating and executing digital
-                                transformation in your organization.</p>
+                            <h3 class="text-xl font-semibold mb-2">How Clothin is Changing the Way We Shop</h3>
+                            <p class="text-gray-600 mb-4">Explore how buying and selling preloved clothing is making
+                                fashion more affordable and sustainable for everyone.</p>
                             <a href="#" class="text-blue-500 font-medium flex items-center hover:underline">
                                 Read More
                                 <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-4 w-4" fill="none"
@@ -651,6 +621,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="text-center mt-12">
                     <button
                         class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 hover:scale-105">
@@ -658,31 +629,28 @@
                     </button>
                 </div>
             </div>
+
             <div class="absolute inset-0 pointer-events-none -z-10 mix-blend-overlay blur-sm">
-              <div
-                  class="absolute top-28 left-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
-              </div>
-              <div
-                  class="absolute -top-13 left-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
-              </div>
-              <div
-                  class="absolute -top-53 -left-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
-              </div>
-              <div 
-                class="absolute top-75 left-40 w-40 h-40 bg-blue-300/30 rounded-full"></div>
-              <div
-                class="absolute top-30 -left-2 w-40 h-40 bg-blue-300/30 rounded-24"></div>
-              <div
-                  class="absolute -bottom-32 right-0 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
-              </div>
-              <div class="absolute bottom-10 right-38 w-40 h-40 bg-blue-300/30 rounded-full"></div>
-              <div
-                  class="absolute bottom-9 right-2 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
-              </div>
-
-          </div>
+                <div
+                    class="absolute top-28 left-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+                </div>
+                <div
+                    class="absolute -top-13 left-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div
+                    class="absolute -top-53 -left-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div class="absolute top-75 left-40 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+                <div class="absolute top-30 -left-2 w-40 h-40 bg-blue-300/30 rounded-24"></div>
+                <div
+                    class="absolute -bottom-32 right-0 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+                </div>
+                <div class="absolute bottom-10 right-38 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+                <div
+                    class="absolute bottom-9 right-2 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+            </div>
         </section>
-
 
         <section id="contact" class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
@@ -755,24 +723,21 @@
                 </div>
             </div>
             <div class="absolute inset-0 pointer-events-none -z-10 mix-blend-overlay blur-sm">
-              <div
-                  class="absolute bottom-28 -left-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
-              </div>
-              <div
-                  class="absolute -bottom-13 left-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
-              </div>
-              <div
-                  class="absolute bottom-70 -left-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
-              </div>
-              <div 
-                class="absolute -bottom-11 left-80 w-40 h-40 bg-blue-300/30 rounded-full"></div>
-              <div
-                class="absolute bottom-30 left-39 w-40 h-40 bg-blue-300/30 rounded-24"></div>
-          </div>
+                <div
+                    class="absolute bottom-28 -left-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+                </div>
+                <div
+                    class="absolute -bottom-13 left-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div
+                    class="absolute bottom-70 -left-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div class="absolute -bottom-11 left-80 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+                <div class="absolute bottom-30 left-39 w-40 h-40 bg-blue-300/30 rounded-24"></div>
+            </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-300 z-40 relative">
         <div class="container mx-auto px-4 sm:px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -890,12 +855,11 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                             </svg>
-                            <span>contact@example.com</span>
+                            <span>nauvalaryanto2005@gmail.com</span>
                         </li>
                         <li>
-                            <p>123 Business Avenue</p>
-                            <p>Suite 200</p>
-                            <p>San Francisco, CA 94107</p>
+                            <p>Karah Indah VI BLok D 28</p>
+                            <p>surabaya, Jambangan</p>
                         </li>
                     </ul>
                 </div>
