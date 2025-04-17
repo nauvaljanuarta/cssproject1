@@ -71,64 +71,74 @@
 </head>
 
 <body>
-  <header id="navbar" class="sticky top-0 z-40 bg-white shadow-black">
-    <div class="container mx-auto px-auto sm:px-4 md:px-6 h-16 grid grid-cols-3 items-center">
+    <header id="navbar" class="sticky top-0 z-40 bg-white shadow-black">
+        <div class="container mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
 
-      
-      <!-- Kiri: Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-6">
-        <a href="#testimonials" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Testimoni</a>
-        <a href="#features" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Fitur</a>
-        <a href="#blog" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Blog</a>
-        <a href="#contact" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Kontak</a>
-      </nav>
-  
-      <div class="text-center">
-        <a href="#hero" class="nav-link"><span class="text-3xl sm:text-4xl font-bold">ClothIn.</span></a>
-      </div>
-  
-      <div class="flex justify-end items-center gap-4 pr-2 sm:pr-4 md:pr-6">
-        
-        <button class="hidden lg:inline-block text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">
-          Get Started
-        </button>
+            <!-- Kiri: Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-6">
+                <a href="#testimonials"
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Testimoni</a>
+                <a href="#features"
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Fitur</a>
+                <a href="#blog"
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Blog</a>
+                <a href="#contact"
+                    class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Kontak</a>
+            </nav>
 
-        <div class="col-span-1 flex justify-end">
-          <button id="mobile-menu-button"
-            class="p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-2">
-            <span class="sr-only">Open main menu</span>
-            <svg id="menu-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-            <svg id="close-icon" class="hidden h-6 w-6" fill="none" stroke="currentColor"
-              viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+            <!-- Tengah: Logo -->
+            <div class="text-center">
+                <a href="#hero" class="nav-link"><span
+                        class="text-2xl sm:text-4xl font-bold me-70">ClothIn.</span></a>
+            </div>
+
+            <!-- Kanan: Button Desktop / Hamburger Mobile -->
+            <div class="flex items-center justify-end gap-4">
+                <!-- Desktop Button -->
+                <button
+                    class="hidden lg:inline-block text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">
+                    Get Started
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button"
+                    class="lg:hidden p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-2">
+                    <span class="sr-only">Open main menu</span>
+                    <svg id="menu-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg id="close-icon" class="hidden h-6 w-6" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
         </div>
-      
-      </div>
-    </div>
-  
-    <!-- Mobile Nav -->
-    <div id="mobile-menu" class="hidden lg:hidden px-4 bg-white shadow-lg">
-      <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Features</a>
-      <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Testimonials</a>
-      <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Blog</a>
-      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Contact</a>
-      <div class="px-3 py-2">
-        <button class="w-full bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">Get Started</button>
-      </div>
-    </div>
-  </header>
-  
+
+        <!-- Mobile Nav -->
+        <div class="ml-auto">
+            <div id="mobile-menu" class="hidden lg:hidden px-4 bg-white shadow-lg">
+                <a href="#features"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Features</a>
+                <a href="#testimonials"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Testimonials</a>
+                <a href="#blog"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Blog</a>
+                <a href="#contact"
+                    class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Contact</a>
+                <div class="px-3 py-2">
+                    <button class="w-full bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">Get
+                        Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
     <main class="flex-1">
-        <!-- herosection -->
         <section id="hero" class="relative py-20 md:py-32 overflow-visible">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -156,6 +166,12 @@
                             <img src="../images/hero2.svg" alt="Platform dashboard"
                                 class="w-full h-auto rounded-3xl max-w-4xl drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)]" />
                         </div>
+                        <!-- <div
+                            class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] overflow-x-clip mix-blend-overlay">
+                        </div>
+                        <div
+                            class="absolute -top-6 -right-6 w-32 h-32 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] [animation-delay:1s] overflow-x-clip mix-blend-overlay">
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -184,9 +200,7 @@
         </section>
 
 
-        <!-- Testimonial Section -->
         <section id="testimonials" class="relative py-20 bg-blue-500/3 pt-20 z-15 rounded-lg">
-
             <div class="relative z-20 container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
@@ -196,12 +210,10 @@
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-6">
-
                     <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
                         <div class="group [perspective:1000px] h-72 w-full">
                             <div
                                 class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-
                                 <div
                                     class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
                                     <div class="flex flex-col items-center flex-grow">
@@ -289,35 +301,34 @@
                     </div>
                 </div>
             </div>
-
         </section>
-
 
         <section id="features" class="py-20 hidden-section relative z-10">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
                     <div class="md:sticky md:top-24">
-                        <h2 class="text-4xl font-bold mb-6">Powerful Features</h2>
-                        <p class="text-lg text-gray-600 mb-4">
+                        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Powerful Features</h2>
+                        <p class="text-lg sm:text-xl text-gray-600 mb-4">
                             Our platform is packed with features designed to help your business thrive in the digital
                             age.
                         </p>
-                        <p class="text-base text-gray-500">
+                        <p class="text-base sm:text-lg text-gray-500">
                             Explore tools that improve speed, security, integration, and give you the insight to grow
                             efficiently.
                         </p>
                     </div>
 
                     <div class="grid grid-cols-2 gap-8 relative z-10">
+                        <!-- Card 1 -->
                         <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105  ">
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
                             <div>
-                                <h3 class="text-xl font-semibold mb-1">Lightning Fast</h3>
-                                <p class="text-gray-600">Our platform is optimized for speed, ensuring you never have
-                                    to wait for results.</p>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
+                                    ensuring you never have to wait for results.</p>
                             </div>
-                            <div class="ml-auto">
+                            <div class="mt-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -325,58 +336,59 @@
                                 </svg>
                             </div>
                         </div>
+
                         <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105 ">
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
                             <div>
-                                <h3 class="text-xl font-semibold mb-1">Secure by Design</h3>
-                                <p class="text-gray-600">Enterprise-grade security built into every layer of our
-                                    infrastructure.</p>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
+                                    ensuring you never have to wait for results.</p>
                             </div>
-                            <div class="ml-auto">
+                            <div class="mt-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
                         </div>
+
                         <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105">
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
                             <div>
-                                <h3 class="text-xl font-semibold mb-1">Secure by Design</h3>
-                                <p class="text-gray-600">Enterprise-grade security built into every layer of our
-                                    infrastructure.</p>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
+                                    ensuring you never have to wait for results.</p>
                             </div>
-                            <div class="ml-auto">
+                            <div class="mt-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
                         </div>
+
                         <div
-                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105">
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 flex-col transition hover:scale-105">
                             <div>
-                                <h3 class="text-xl font-semibold mb-1">Secure by Design</h3>
-                                <p class="text-gray-600">Enterprise-grade security built into every layer of our
-                                    infrastructure.</p>
+                                <h3 class="text-xl sm:text-2xl font-semibold mb-1">Lightning Fast</h3>
+                                <p class="text-gray-600 text-sm sm:text-base">Our platform is optimized for speed,
+                                    ensuring you never have to wait for results.</p>
                             </div>
-                            <div class="ml-auto">
+                            <div class="mt-auto">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
                                     viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <!-- Feature Split Right Section -->
         <section class="py-20  hidden-section bg-blue-500/3">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -464,7 +476,6 @@
             </div>
         </section>
 
-        <!-- Feature Quote Left Section -->
         <section class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -524,7 +535,6 @@
             </div>
         </section>
 
-        <!-- Testimonial Quote Section -->
         <section class="py-20 bg-blue-600/5 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="max-w-4xl mx-auto text-center">
@@ -555,7 +565,6 @@
             </div>
         </section>
 
-        <!-- Post Square Section -->
         <section id="blog" class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-16">
@@ -564,9 +573,7 @@
                         Stay updated with our latest articles, tips, and industry insights.
                     </p>
                 </div>
-
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Post 1 -->
                     <div
                         class="overflow-hidden border-0 shadow-md rounded-lg bg-white transform transition-transform hover:scale-105">
                         <div class="aspect-square">
@@ -593,7 +600,6 @@
                         </div>
                     </div>
 
-                    <!-- Post 2 -->
                     <div
                         class="overflow-hidden border-0 shadow-md rounded-lg bg-white transform transition-transform hover:scale-105">
                         <div class="aspect-square">
@@ -619,8 +625,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- Post 3 -->
                     <div
                         class="overflow-hidden border-0 shadow-md rounded-lg bg-white transform transition-transform hover:scale-105">
                         <div class="aspect-square">
@@ -647,7 +651,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="text-center mt-12">
                     <button
                         class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 px-8 hover:scale-105">
@@ -655,10 +658,33 @@
                     </button>
                 </div>
             </div>
+            <div class="absolute inset-0 pointer-events-none -z-10 mix-blend-overlay blur-sm">
+              <div
+                  class="absolute top-28 left-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+              </div>
+              <div
+                  class="absolute -top-13 left-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+              </div>
+              <div
+                  class="absolute -top-53 -left-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+              </div>
+              <div 
+                class="absolute top-75 left-40 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+              <div
+                class="absolute top-30 -left-2 w-40 h-40 bg-blue-300/30 rounded-24"></div>
+              <div
+                  class="absolute -bottom-32 right-0 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+              </div>
+              <div class="absolute bottom-10 right-38 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+              <div
+                  class="absolute bottom-9 right-2 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+              </div>
+
+          </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-white hidden-section">
+
+        <section id="contact" class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
@@ -728,11 +754,26 @@
                     </div>
                 </div>
             </div>
+            <div class="absolute inset-0 pointer-events-none -z-10 mix-blend-overlay blur-sm">
+              <div
+                  class="absolute bottom-28 -left-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+              </div>
+              <div
+                  class="absolute -bottom-13 left-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+              </div>
+              <div
+                  class="absolute bottom-70 -left-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+              </div>
+              <div 
+                class="absolute -bottom-11 left-80 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+              <div
+                class="absolute bottom-30 left-39 w-40 h-40 bg-blue-300/30 rounded-24"></div>
+          </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300">
+    <footer class="bg-gray-900 text-gray-300 z-40 relative">
         <div class="container mx-auto px-4 sm:px-6 py-12">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
