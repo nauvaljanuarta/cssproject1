@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "src/input.css",
+      "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
         "distDir": "public"
@@ -10,7 +10,7 @@
   ],
   "routes": [
     {
-      "src": "package.json",
+      "src": "/(.*)",
       "dest": "/public/$1"
     }
   ]
