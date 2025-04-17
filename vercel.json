@@ -4,7 +4,8 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "public"
+        "distDir": "public",
+        "installCommand": "npm install && chmod +x ./node_modules/.bin/tailwindcss"
       }
     }
   ],
