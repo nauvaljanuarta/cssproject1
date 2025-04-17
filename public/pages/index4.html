@@ -71,66 +71,60 @@
 </head>
 
 <body>
-    <header id="navbar" class="sticky top-0 z-40 bg-white shadow-black">
-        <div class="container mx-auto px-0 flex items-center justify-between h-16">
-            <!-- Navigation -->
-            <nav class=" items-center gap-6 ml-auto hidden lg:flex">
-                <a href="#testimonials"
-                    class="nav-link font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Testimoni</a>
-                <a href="#features"
-                    class="nav-link font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Fitur</a>
-                <a href="#blog"
-                    class="nav-link font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Blog</a>
-                <a href="#contact"
-                    class="nav-link font-bold rounded-lg px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Kontak</a>
-            </nav>
+  <header id="navbar" class="sticky top-0 z-40 bg-white shadow-black">
+    <div class="container mx-auto px-auto sm:px-4 md:px-6 h-16 grid grid-cols-3 items-center">
 
-            <!-- Brand Name -->
-            <div class="flex items-center justify-center flex-grow text-center me-68 md:40">
-                <a href="#hero" class="nav-link"><span class="text-5xl font-bold">ClothIn.</span></a>
-            </div>
+      
+      <!-- Kiri: Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-6">
+        <a href="#testimonials" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Testimoni</a>
+        <a href="#features" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Fitur</a>
+        <a href="#blog" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Blog</a>
+        <a href="#contact" class="nav-link font-bold px-3 py-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">Kontak</a>
+      </nav>
+  
+      <div class="text-center">
+        <a href="#hero" class="nav-link"><span class="text-3xl sm:text-4xl font-bold">ClothIn.</span></a>
+      </div>
+  
+      <div class="flex justify-end items-center gap-4 pr-2 sm:pr-4 md:pr-6">
+        
+        <button class="hidden lg:inline-block text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">
+          Get Started
+        </button>
 
-            <!-- Buttons -->
-            <div class="hidden lg:flex items-center gap-4">
-                <button
-                    class="text-sm font-medium bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">Get
-                    Started</button>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <div class="lg:hidden">
-                <button id="mobile-menu-button"
-                    class="p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-2">
-                    <span class="sr-only">Open main menu</span>
-                    <svg id="menu-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <svg id="close-icon" class="hidden h-6 w-6" fill="none" stroke="currentColor"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
+        <div class="col-span-1 flex justify-end">
+          <button id="mobile-menu-button"
+            class="p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:ring-2">
+            <span class="sr-only">Open main menu</span>
+            <svg id="menu-icon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="close-icon" class="hidden h-6 w-6" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
         </div>
+      
+      </div>
+    </div>
+  
+    <!-- Mobile Nav -->
+    <div id="mobile-menu" class="hidden lg:hidden px-4 bg-white shadow-lg">
+      <a href="#features" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Features</a>
+      <a href="#testimonials" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Testimonials</a>
+      <a href="#blog" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Blog</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Contact</a>
+      <div class="px-3 py-2">
+        <button class="w-full bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">Get Started</button>
+      </div>
+    </div>
+  </header>
+  
 
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="hidden lg:hidden px-4 bg-white shadow-lg">
-            <a href="#features"
-                class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Features</a>
-            <a href="#testimonials"
-                class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Testimonials</a>
-            <a href="#blog"
-                class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Blog</a>
-            <a href="#contact"
-                class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-100 nav-link">Contact</a>
-            <div class="px-3 py-2">
-                <button class="w-full bg-blue-600 text-white hover:bg-blue-500 h-10 px-4 py-2 rounded-md">Get
-                    Started</button>
-            </div>
-        </div>
-    </header>
 
 
     <main class="flex-1">
@@ -162,12 +156,6 @@
                             <img src="../images/hero2.svg" alt="Platform dashboard"
                                 class="w-full h-auto rounded-3xl max-w-4xl drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)]" />
                         </div>
-                        <!-- <div
-                            class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] overflow-x-clip mix-blend-overlay">
-                        </div>
-                        <div
-                            class="absolute -top-6 -right-6 w-32 h-32 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] [animation-delay:1s] overflow-x-clip mix-blend-overlay">
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -301,77 +289,91 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
 
-
-        <!-- Feature List Section -->
-        <section id="features" class="py-20 hidden-section">
+        <section id="features" class="py-20 hidden-section relative z-10">
             <div class="container mx-auto px-4 sm:px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl font-bold mb-4">Powerful Features</h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Our platform is packed with features designed to help your business thrive in the digital age.
-                    </p>
-                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Feature 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md feature-card">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-2">Lightning Fast</h3>
-                        <p class="text-gray-600">Our platform is optimized for speed, ensuring you never have to wait
-                            for results.</p>
+                    <div class="md:sticky md:top-24">
+                        <h2 class="text-4xl font-bold mb-6">Powerful Features</h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Our platform is packed with features designed to help your business thrive in the digital
+                            age.
+                        </p>
+                        <p class="text-base text-gray-500">
+                            Explore tools that improve speed, security, integration, and give you the insight to grow
+                            efficiently.
+                        </p>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md feature-card">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                            </svg>
+                    <div class="grid grid-cols-2 gap-8 relative z-10">
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105  ">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Lightning Fast</h3>
+                                <p class="text-gray-600">Our platform is optimized for speed, ensuring you never have
+                                    to wait for results.</p>
+                            </div>
+                            <div class="ml-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Secure by Design</h3>
-                        <p class="text-gray-600">Enterprise-grade security built into every layer of our
-                            infrastructure.</p>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md feature-card">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                            </svg>
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105 ">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Secure by Design</h3>
+                                <p class="text-gray-600">Enterprise-grade security built into every layer of our
+                                    infrastructure.</p>
+                            </div>
+                            <div class="ml-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Advanced Analytics</h3>
-                        <p class="text-gray-600">Gain insights with comprehensive data visualization and reporting
-                            tools.</p>
-                    </div>
-
-                    <!-- Feature 4 -->
-                    <div class="bg-white p-6 rounded-lg shadow-md feature-card">
-                        <div class="mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Secure by Design</h3>
+                                <p class="text-gray-600">Enterprise-grade security built into every layer of our
+                                    infrastructure.</p>
+                            </div>
+                            <div class="ml-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2">Easy Integration</h3>
-                        <p class="text-gray-600">Seamlessly connects with your existing tools and workflows.</p>
+                        <div
+                            class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4 transition hover:scale-105">
+                            <div>
+                                <h3 class="text-xl font-semibold mb-1">Secure by Design</h3>
+                                <p class="text-gray-600">Enterprise-grade security built into every layer of our
+                                    infrastructure.</p>
+                            </div>
+                            <div class="ml-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- Feature Split Right Section -->
@@ -379,12 +381,10 @@
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
-                    <!-- LEFT: Illustration / Image -->
                     <div class="flex justify-center">
                         <img src="../images/hero3.svg" alt="Workflow Illustration" class="rounded-xl  max-w-full" />
                     </div>
 
-                    <!-- RIGHT: Text Content -->
                     <div>
                         <h2 class="text-3xl font-bold mb-6">Streamline Your Workflow</h2>
                         <p class="text-lg text-gray-600 mb-8">
@@ -436,11 +436,33 @@
                             Learn More
                         </button>
                     </div>
-
                 </div>
             </div>
-        </section>
+            <div class="absolute inset-0 pointer-events-none z-0 mix-blend-overlay blur-sm">
+                <div class="absolute -top-32 left-0 w-40 h-40 bg-blue-300 opacity-30">
+                </div>
+                <div class="absolute top-50 left-42 w-40 h-40 bg-blue-300 opacity-30">
+                </div>
+                <div class="absolute top-8 left-42 w-40 h-40 bg-blue-300/30 rounded-full"></div>
+                <div
+                    class="absolute top-9 left-2 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div
+                    class="absolute top-87 left-42 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+                </div>
+                <div
+                    class="absolute bottom-28 right-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
+                </div>
+                <div
+                    class="absolute -bottom-13 right-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div
+                    class="absolute -bottom-53 -right-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div class="absolute -bottom-12 right-7 w-40 h-40 bg-blue-300/30 rounded-full"></div>
 
+            </div>
+        </section>
 
         <!-- Feature Quote Left Section -->
         <section class="py-20 hidden-section">
