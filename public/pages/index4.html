@@ -9,7 +9,7 @@
     <link href="../css/style.css" rel="stylesheet">
     <style>
         html {
-            scroll-padding-top: 4rem;
+
             overflow-x: hidden;
         }
 
@@ -86,7 +86,7 @@
             </nav>
 
             <!-- Brand Name -->
-            <div class="flex items-center justify-center flex-grow text-center me-60 md:40">
+            <div class="flex items-center justify-center flex-grow text-center me-68 md:40">
                 <a href="#hero" class="nav-link"><span class="text-5xl font-bold">ClothIn.</span></a>
             </div>
 
@@ -135,155 +135,174 @@
 
     <main class="flex-1">
         <!-- herosection -->
-        <section id="hero" class="relative bg-gradient-to-b from-gray-50 to-white py-20 md:py-32 overflow-visible">
+        <section id="hero" class="relative py-20 md:py-32 overflow-visible">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
                     <div class="text-center lg:text-left z-10">
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
-                            Transform Your Business with Our Solution
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6" id="typed-h1">
+
                         </h1>
-                        <p class="text-lg md:text-xl text-gray-600 mb-8">
-                            Clothin is providing your problem with clothing trading and transaction. So? what r u
-                            waiting for?. Let's get started.
+                        <p class="text-lg md:text-xl text-gray-600 mb-8" id="typed-p">
+
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <button
-                                class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-transform duration-300 ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 
-                                      bg-blue-600 text-white hover:bg-blue-500 hover:scale-105 px-8 h-11">
+                            <button id="learn-more-btn"
+                                class="opacity-0 transition-opacity duration-700 ease-in-out inline-flex items-center justify-center rounded-md text-sm font-medium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 
+                              bg-blue-600 text-white hover:bg-blue-500 hover:scale-105 px-8 h-11">
                                 Learn More
                             </button>
                         </div>
                     </div>
                     <!-- bagian kanan -->
                     <div class="relative">
-                        <div class="relative w-full max-w-xl mx-auto z-15 overflow-hidden">
+                        <div id="hero-image"
+                            class="relative w-full max-w-xl mx-auto z-15 overflow-hidden opacity-0 translate-y-10
+                            transition-all duration-1000 ease-out">
                             <img src="../images/hero2.svg" alt="Platform dashboard"
                                 class="w-full h-auto rounded-3xl max-w-4xl drop-shadow-[0_10px_10px_rgba(0,0,0,0.15)]" />
                         </div>
-                        <div
-                            class="absolute -bottom-6 -left-6 w-24 h-24 bg-sky-500 rounded-full z-0 animate-[bounce_3s_infinite] overflow-x-clip">
+                        <!-- <div
+                            class="absolute -bottom-6 -left-6 w-24 h-24 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] overflow-x-clip mix-blend-overlay">
                         </div>
                         <div
-                            class="absolute -top-6 -right-6 w-32 h-32 bg-sky-500 rounded-full z-0 animate-[bounce_3s_infinite] [animation-delay:1s] overflow-x-clip">
-                        </div>
+                            class="absolute -top-6 -right-6 w-32 h-32 bg-blue-300/40 rounded-full z-0 animate-[bounce_3s_infinite] [animation-delay:1s] overflow-x-clip mix-blend-overlay">
+                        </div> -->
                     </div>
                 </div>
             </div>
 
 
-            <!-- <div class="relative max-w-full z-10 md:flex">
+            <div class="absolute inset-0 pointer-events-none z-0 mix-blend-overlay blur-sm">
                 <div
-                    class="absolute bottom-28 right-50 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-400 opacity-40 rounded- ">
+                    class="absolute -top-32 left-0 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
                 </div>
+                <div class="absolute top-10 left-38 w-40 h-40 bg-blue-300/30 rounded-full"></div>
                 <div
-                    class="absolute -bottom-13 right-49 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-400 opacity-40 rotate-90">
-                </div>
-                <div
-                    class="absolute -bottom-53 right-7 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-400 opacity-40 rotate-90">
+                    class="absolute top-9 left-2 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
                 </div>
                 <div
-                    class="absolute bottom-28 right-5 w-40 h-40 bg-blue-300 opacity-40 border-3 border-blue-500 rounded-full">
+                    class="absolute bottom-28 right-40 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30">
                 </div>
-                <div class="absolute -bottom-40 -right-32 w-50 h-50 opacity-40 border-3 border-blue-500 rounded-full">
+                <div
+                    class="absolute -bottom-13 right-39 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
                 </div>
+                <div
+                    class="absolute -bottom-53 -right-3 w-0 h-0 border-l-[160px] border-b-[170px] border-l-transparent border-b-blue-300 opacity-30 rotate-90">
+                </div>
+                <div class="absolute -bottom-12 right-7 w-40 h-40 bg-blue-300/30 rounded-full"></div>
 
-                <!-- <div class="absolute -bottom-20 right-0 w-32 h-32 bg-sky-300/20 rounded-full"></div> -->
-            <!-- <div class="absolute bottom-28 right-0 w-20 h-20 bg-sky-300/25 rounded-md"></div> -->
-            <!-- <div class="absolute bottom-36 right-0 w-30 h-30 border-b-sky-400/25"></div> -->
-            </div> -->
+            </div>
         </section>
 
 
         <!-- Testimonial Section -->
-        <section id="testimonials" class="relative py-20 bg-blue-500/15 pt-20 z-15">
-        
-          <div class="relative z-20 container mx-auto px-4 sm:px-6">
-            <div class="text-center mb-16">
-              <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
-              <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                Don't just take our word for it. Here's what our customers have to say about their experience.
-              </p>
+        <section id="testimonials" class="relative py-20 bg-blue-500/3 pt-20 z-15 rounded-lg">
+
+            <div class="relative z-20 container mx-auto px-4 sm:px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">What Our Customers Say</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Don't just take our word for it. Here's what our customers have to say about their experience.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-6">
+
+                    <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
+                        <div class="group [perspective:1000px] h-72 w-full">
+                            <div
+                                class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                                <div
+                                    class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
+                                    <div class="flex flex-col items-center flex-grow">
+                                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
+                                            <img src="https://placehold.co/100x100" alt="Alex Johnson"
+                                                class="w-full h-full object-cover" />
+                                        </div>
+                                        <p class="text-gray-700">"This platform has completely transformed how we
+                                            approach our marketing campaigns."</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p class="font-semibold text-blue-500">Alex Johnson</p>
+                                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <p>
+                                        More about Alex Johnson and his experience at TechCorp. He has led numerous
+                                        award-winning campaigns and is passionate about digital innovation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
+                        <div class="group [perspective:1000px] h-72 w-full">
+                            <div
+                                class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+
+                                <div
+                                    class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
+                                    <div class="flex flex-col items-center flex-grow">
+                                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
+                                            <img src="https://placehold.co/100x100" alt="Alex Johnson"
+                                                class="w-full h-full object-cover" />
+                                        </div>
+                                        <p class="text-gray-700">"This platform has completely transformed how we
+                                            approach our marketing campaigns."</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p class="font-semibold text-blue-500">Alex Johnson</p>
+                                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <p>
+                                        More about Alex Johnson and his experience at TechCorp. He has led numerous
+                                        award-winning campaigns and is passionate about digital innovation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
+                        <div class="group [perspective:1000px] h-72 w-full">
+                            <div
+                                class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                                <div
+                                    class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
+                                    <div class="flex flex-col items-center flex-grow">
+                                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
+                                            <img src="https://placehold.co/100x100" alt="Alex Johnson"
+                                                class="w-full h-full object-cover" />
+                                        </div>
+                                        <p class="text-gray-700">"This platform has completely transformed how we
+                                            approach our marketing campaigns."</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p class="font-semibold text-blue-500">Alex Johnson</p>
+                                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+                                    <p>
+                                        More about Alex Johnson and his experience at TechCorp. He has led numerous
+                                        award-winning campaigns and is passionate about digital innovation.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        
-            <div class="flex flex-wrap justify-center gap-6">
-             
-              <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
-                <div class="group [perspective:1000px] h-72 w-full">
-                  <div class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    
-                    <div class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
-                      <div class="flex flex-col items-center flex-grow">
-                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
-                          <img src="https://placehold.co/100x100" alt="Alex Johnson" class="w-full h-full object-cover" />
-                        </div>
-                        <p class="text-gray-700">"This platform has completely transformed how we approach our marketing campaigns."</p>
-                      </div>
-                      <div class="mt-4">
-                        <p class="font-semibold text-blue-500">Alex Johnson</p>
-                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
-                      </div>
-                    </div>
-                    
-                    <div class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                      <p>
-                        More about Alex Johnson and his experience at TechCorp. He has led numerous award-winning campaigns and is passionate about digital innovation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
-                <div class="group [perspective:1000px] h-72 w-full">
-                  <div class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                   
-                    <div class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
-                      <div class="flex flex-col items-center flex-grow">
-                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
-                          <img src="https://placehold.co/100x100" alt="Alex Johnson" class="w-full h-full object-cover" />
-                        </div>
-                        <p class="text-gray-700">"This platform has completely transformed how we approach our marketing campaigns."</p>
-                      </div>
-                      <div class="mt-4">
-                        <p class="font-semibold text-blue-500">Alex Johnson</p>
-                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
-                      </div>
-                    </div>
-                    <div class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                      <p>
-                        More about Alex Johnson and his experience at TechCorp. He has led numerous award-winning campaigns and is passionate about digital innovation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="w-[90%] sm:w-[48%] lg:w-[30%] flex-shrink-0">
-                <div class="group [perspective:1000px] h-72 w-full">
-                  <div class="relative h-full w-full duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-                    <div class="absolute inset-0 bg-white rounded-lg shadow-md p-6 flex flex-col justify-between text-center [backface-visibility:hidden]">
-                      <div class="flex flex-col items-center flex-grow">
-                        <div class="w-16 h-16 mb-4 rounded-full overflow-hidden">
-                          <img src="https://placehold.co/100x100" alt="Alex Johnson" class="w-full h-full object-cover" />
-                        </div>
-                        <p class="text-gray-700">"This platform has completely transformed how we approach our marketing campaigns."</p>
-                      </div>
-                      <div class="mt-4">
-                        <p class="font-semibold text-blue-500">Alex Johnson</p>
-                        <p class="text-sm text-gray-500">Marketing Director, TechCorp</p>
-                      </div>
-                    </div>
-                    <div class="absolute inset-0 bg-white rounded-lg shadow-lg p-6 flex items-center justify-center text-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
-                      <p>
-                        More about Alex Johnson and his experience at TechCorp. He has led numerous award-winning campaigns and is passionate about digital innovation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
-        
+
 
 
         <!-- Feature List Section -->
@@ -356,7 +375,7 @@
         </section>
 
         <!-- Feature Split Right Section -->
-        <section class="py-20 bg-white hidden-section">
+        <section class="py-20  hidden-section bg-blue-500/3">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -424,7 +443,7 @@
 
 
         <!-- Feature Quote Left Section -->
-        <section class="py-20 bg-gray-50 hidden-section">
+        <section class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div class="relative">
@@ -478,18 +497,13 @@
                                 <p class="text-sm text-gray-600">Customer satisfaction</p>
                             </div>
                         </div>
-
-                        <button
-                            class="inline-flex items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-blue-500 text-white hover:bg-blue-500/90 h-10 px-4 py-2 hover:scale-105">
-                            See Case Studies
-                        </button>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Testimonial Quote Section -->
-        <section class="py-20 bg-white hidden-section">
+        <section class="py-20 bg-blue-600/5 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-blue-500/40 mb-6"
@@ -520,7 +534,7 @@
         </section>
 
         <!-- Post Square Section -->
-        <section id="blog" class="py-20 bg-gray-50 hidden-section">
+        <section id="blog" class="py-20 hidden-section">
             <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl font-bold mb-4">Latest Insights</h2>
@@ -825,23 +839,24 @@
             </div>
 
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
-                <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+                <p>&copy; 2025 Clothin. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="back-to-top p-2 rounded-full bg-blue-500 text-white shadow-md hover:bg-blue-500/90">
+    <button id="back-to-top"
+        class="back-to-top p-2 rounded-full bg-blue-500 text-white shadow-md hover:bg-blue-500/90">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
     </button>
 
-    <!-- JavaScript -->
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile Menu Toggle
+            //menu mobile
             const mobileMenuButton = document.getElementById('mobile-menu-button');
             const mobileMenu = document.getElementById('mobile-menu');
             const menuIcon = document.getElementById('menu-icon');
@@ -853,12 +868,56 @@
                 closeIcon.classList.toggle('hidden');
             });
 
-            // Smooth Scrolling for Navigation Links
+            // animasi hero section
+            const titleText = "Transform Your Business with Our Solution";
+            const subtitleText =
+                "Clothin is providing your problem with clothing trading and transaction. So? what r u waiting for?. Let's get started.";
+
+            let titleIndex = 0;
+            let subtitleIndex = 0;
+
+            const h1El = document.getElementById('typed-h1');
+            const pEl = document.getElementById('typed-p');
+            const learnMoreBtn = document.getElementById('learn-more-btn');
+            const heroImage = document.getElementById('hero-image');
+
+            function typeWriterTitle() {
+                if (titleIndex < titleText.length) {
+                    h1El.textContent += titleText.charAt(titleIndex);
+                    titleIndex++;
+                    setTimeout(typeWriterTitle, 60); // kecepatan ketik
+
+                } else {
+                    setTimeout(typeWriterSubtitle, 300); // delay sebelum subtitle mulai
+                }
+            }
+
+            function typeWriterSubtitle() {
+                if (subtitleIndex < subtitleText.length) {
+                    pEl.textContent += subtitleText.charAt(subtitleIndex);
+                    subtitleIndex++;
+                    setTimeout(typeWriterSubtitle, 25);
+                    heroImage.classList.remove('translate-y-10', 'opacity-0');
+                    heroImage.classList.add('opacity-100',
+                        'translate-y-0',
+                        'animate-ease out');
+                } else {
+                    learnMoreBtn.classList.remove('opacity-0');
+                    learnMoreBtn.classList.add('opacity-100')
+
+                }
+
+            }
+
+            window.addEventListener('DOMContentLoaded', () => {
+                typeWriterTitle();
+            });
+
+            // scroll smooth tap navbar
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.addEventListener('click', function(e) {
                     e.preventDefault();
 
-                    // Close mobile menu if open
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                         menuIcon.classList.remove('hidden');
@@ -877,7 +936,7 @@
                 });
             });
 
-            // Animated Counters
+            // animasi count 
             const counters = document.querySelectorAll('.counter');
             const counterObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -910,7 +969,7 @@
                 counterObserver.observe(counter);
             });
 
-            // Scroll Animations
+            // animasi saat scroll
             const sections = document.querySelectorAll('.hidden-section');
             const sectionObserver = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
@@ -927,7 +986,7 @@
                 sectionObserver.observe(section);
             });
 
-            // Sticky Header
+            // heaader sticky untuk shadow
             const header = document.getElementById('navbar');
             const headerObserver = new IntersectionObserver((entries) => {
                 header.classList.toggle('scrolled', window.scrollY > 50);
@@ -939,7 +998,7 @@
                 header.classList.toggle('scrolled', window.scrollY > 50);
             });
 
-            // Back to Top Button
+            // tombol keatas
             const backToTopButton = document.getElementById('back-to-top');
 
             window.addEventListener('scroll', function() {
@@ -956,71 +1015,6 @@
                     behavior: 'smooth'
                 });
             });
-
-            // Form Validation
-            const contactForm = document.getElementById('contact-form');
-            const successMessage = document.getElementById('success-message');
-
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-
-                    let isValid = true;
-                    const formElements = contactForm.elements;
-
-                    // Reset error messages
-                    document.querySelectorAll('.error-message').forEach(el => {
-                        el.classList.add('hidden');
-                    });
-
-                    // Validate required fields
-                    for (let i = 0; i < formElements.length; i++) {
-                        const element = formElements[i];
-
-                        if (element.hasAttribute('required') && !element.value.trim()) {
-                            isValid = false;
-                            const errorMessage = element.nextElementSibling;
-                            if (errorMessage && errorMessage.classList.contains('error-message')) {
-                                errorMessage.classList.remove('hidden');
-                            }
-                        }
-
-                        // Email validation
-                        if (element.type === 'email' && element.value.trim()) {
-                            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                            if (!emailPattern.test(element.value)) {
-                                isValid = false;
-                                const errorMessage = element.nextElementSibling;
-                                if (errorMessage && errorMessage.classList.contains('error-message')) {
-                                    errorMessage.classList.remove('hidden');
-                                }
-                            }
-                        }
-                    }
-
-                    if (isValid) {
-                        // Simulate form submission
-                        const submitButton = document.getElementById('submit-button');
-                        submitButton.disabled = true;
-                        submitButton.innerHTML = '<span>Sending...</span>';
-
-                        setTimeout(() => {
-                            contactForm.reset();
-                            contactForm.classList.add('hidden');
-                            successMessage.classList.remove('hidden');
-
-                            // Reset form after 5 seconds
-                            setTimeout(() => {
-                                contactForm.classList.remove('hidden');
-                                successMessage.classList.add('hidden');
-                                submitButton.disabled = false;
-                                submitButton.innerHTML =
-                                    '<span>Send Message</span><svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>';
-                            }, 5000);
-                        }, 1500);
-                    }
-                });
-            }
         });
     </script>
 </body>
